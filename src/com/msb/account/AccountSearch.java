@@ -56,7 +56,7 @@ public class AccountSearch {
     driver.findElement(By.id("accountName")).clear();
     driver.findElement(By.id("accountName")).sendKeys("i");
     System.out.println("After this failure");
-    driver.findElement(By.cssSelector("accountSearchButton")).click();
+    driver.findElement(By.id("accountSearchButton")).click();
     new Select(driver.findElement(By.id("accountType"))).selectByVisibleText("Customer");
     driver.findElement(By.id("accountSearchButton")).click();
     new Select(driver.findElement(By.id("Countries"))).selectByVisibleText("Australia");
