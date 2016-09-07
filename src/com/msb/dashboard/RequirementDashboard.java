@@ -58,7 +58,7 @@ public class RequirementDashboard {
 			    driver.findElement(By.id("dashYears")).sendKeys("2016");
 			    driver.findElement(By.id("dashBoardDetails_0")).click();
 			    driver.findElement(By.id("accountNamePopup")).clear();
-			    driver.findElement(By.cssSelector("accountNamePopup")).sendKeys("eri");
+			    driver.findElement(By.id("accountNamePopup")).sendKeys("eri");
 			    driver.findElement(By.xpath("//table[@id='completeTable']/tbody/tr/td/a")).click();
 			    Thread.sleep(2000);
 			    driver.findElement(By.id("dashBoardDetails_0")).click();
