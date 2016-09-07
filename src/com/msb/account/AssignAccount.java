@@ -50,7 +50,7 @@ public class AssignAccount {
 		    driver.findElement(By.xpath("//table[@id='completeTable']/tbody/tr[9]/td/a")).click();
 		    driver.findElement(By.id("toCSR")).clear();
 		    System.out.println("Chaged");
-		    driver.findElement(By.id("toCSR")).sendKeys("csr");
+		    driver.findElement(By.cssSelector("toCSR")).sendKeys("csr");
 		    driver.findElement(By.xpath("//table[@id='completeTable']/tbody/tr[10]/td/a")).click();
 		    Thread.sleep(2000);
 		    driver.findElement(By.id("transfer")).click();
