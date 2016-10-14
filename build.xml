@@ -123,10 +123,10 @@
         </java>
     </target>
     <target name="sampletest">
-<mkdir dir="${junit}"/>
+<mkdir dir="junit"/>
 <junit fork="yes" printsummary="withOutAndErr">
 <formatter type="xml"/>
-<test name="com.msb.account.AccountSearch" todir="${junit}"/>
+<test name="com.msb.account.AccountSearch" todir="junit"/>
 <classpath refid="MSB.classpath"/>
 </junit>
 </target>
